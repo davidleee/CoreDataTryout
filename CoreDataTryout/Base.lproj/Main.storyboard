@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C106a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b6i-xU-vid">
+                                <rect key="frame" x="16" y="40" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="eWr-lD-tCA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cVU-l4-H5j">
+                                <rect key="frame" x="16" y="90" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="NkC-As-HMv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="height" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cPq-Ft-Nb0">
+                                <rect key="frame" x="484" y="90" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Acg-Fa-bRn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="weight" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jxl-cD-WFt">
+                                <rect key="frame" x="484" y="40" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ouT-Ce-aKB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PT-W8-CaV">
+                                <rect key="frame" x="44" y="186" width="45" height="30"/>
+                                <state key="normal" title="写进去">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="writeAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vsf-vr-46R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxk-mh-k2i">
+                                <rect key="frame" x="512" y="186" width="45" height="30"/>
+                                <state key="normal" title="读出来">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="readAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rjf-Qq-eBq"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZk-i2-MME">
+                                <rect key="frame" x="0.0" y="236" width="600" height="128"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="vvZ-pD-WiQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jxl-cD-WFt" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="3rA-d5-snD"/>
+                            <constraint firstItem="8PT-W8-CaV" firstAttribute="centerX" secondItem="cVU-l4-H5j" secondAttribute="centerX" constant="0.5" id="4En-Eb-KWP"/>
+                            <constraint firstItem="nxk-mh-k2i" firstAttribute="centerX" secondItem="cPq-Ft-Nb0" secondAttribute="centerX" constant="0.5" id="5Mc-7n-3So"/>
+                            <constraint firstItem="b6i-xU-vid" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="5sF-X9-zmq"/>
+                            <constraint firstItem="IZk-i2-MME" firstAttribute="top" secondItem="nxk-mh-k2i" secondAttribute="bottom" constant="20" id="AXS-D9-A7t"/>
+                            <constraint firstItem="b6i-xU-vid" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Evh-7K-vTR"/>
+                            <constraint firstItem="IZk-i2-MME" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="JgP-Iv-4NF"/>
+                            <constraint firstAttribute="centerX" secondItem="IZk-i2-MME" secondAttribute="centerX" id="R02-jv-0L2"/>
+                            <constraint firstAttribute="trailing" secondItem="IZk-i2-MME" secondAttribute="trailing" id="TlU-XY-pFv"/>
+                            <constraint firstItem="jxl-cD-WFt" firstAttribute="centerX" secondItem="cPq-Ft-Nb0" secondAttribute="centerX" id="coI-Pg-kLY"/>
+                            <constraint firstItem="cVU-l4-H5j" firstAttribute="top" secondItem="b6i-xU-vid" secondAttribute="bottom" constant="20" id="e7w-OP-32g"/>
+                            <constraint firstItem="jxl-cD-WFt" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="eaB-L9-wf8"/>
+                            <constraint firstItem="IZk-i2-MME" firstAttribute="top" secondItem="8PT-W8-CaV" secondAttribute="bottom" constant="20" id="tAe-e2-qQm"/>
+                            <constraint firstAttribute="centerY" secondItem="IZk-i2-MME" secondAttribute="centerY" id="tyZ-Tb-Yo8"/>
+                            <constraint firstItem="cPq-Ft-Nb0" firstAttribute="top" secondItem="jxl-cD-WFt" secondAttribute="bottom" constant="20" id="xHF-vJ-O7E"/>
+                            <constraint firstItem="b6i-xU-vid" firstAttribute="centerX" secondItem="cVU-l4-H5j" secondAttribute="centerX" id="xj0-Tt-Cdw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ageTextField" destination="cVU-l4-H5j" id="KvT-on-uGI"/>
+                        <outlet property="consoleTextView" destination="IZk-i2-MME" id="sCN-Eg-Pqk"/>
+                        <outlet property="heightTextField" destination="cPq-Ft-Nb0" id="ndS-Jo-dAi"/>
+                        <outlet property="nameTextField" destination="b6i-xU-vid" id="stt-OL-aZb"/>
+                        <outlet property="weightTextField" destination="jxl-cD-WFt" id="PFl-Ny-2iY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
